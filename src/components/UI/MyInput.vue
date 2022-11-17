@@ -3,6 +3,8 @@
 </template>
 
 <script>
+/**
+ * UI component Input*/
 export default {
   name: "MyInput",
   props: {
@@ -10,6 +12,8 @@ export default {
   },
 
   methods: {
+    /** this method update input value
+     * @param {event} event*/
     updateValue(event) {
       this.$emit('update:modelValue', event.target.value)
     }

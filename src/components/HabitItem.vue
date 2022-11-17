@@ -5,6 +5,7 @@
 </template>
 
 <script>
+/** Habit Item component*/
 export default {
   name: "HabitItem",
   props: {
@@ -14,6 +15,9 @@ export default {
     }
   },
   methods: {
+    /**
+     * Gets called when the user click on the habit
+     */
     openDialog(habit) {
       this.$emit('openDialog', habit)
     }

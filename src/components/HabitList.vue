@@ -14,6 +14,8 @@
 
 <script>
 import HabitItem from "@/components/HabitItem";
+
+/** Habit List component */
 export default {
   name: "HabitList",
   components: {HabitItem},
@@ -24,6 +26,8 @@ export default {
     }
   },
   methods: {
+    /** this method callback to App to open dialog
+     * @param {object} habit*/
     opendDialog(habit) {
       this.$emit('openDialog', habit)
     }
